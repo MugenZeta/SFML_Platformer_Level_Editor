@@ -146,12 +146,83 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="MenuObject.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Setup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MenuObject.hpp" />
     <ClInclude Include="Object.hpp" />
+    <ClInclude Include="Player.hpp" />
     <ClInclude Include="Setup.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="game_files\TestGraphics1.png" />
+    <Image Include="game_files\TestGraphics2.png" />
+    <Image Include="game_files\TestGraphics3.png" />
+    <Image Include="game_files\TestGraphics4.png" />
+    <Image Include="game_files\TestGraphics5.png" />
+    <Image Include="game_files\TestGraphics6.png" />
+    <Image Include="game_files\TestGraphics7.png" />
+    <Image Include="game_files\TestGraphics8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="game_files\SFX Pack\Alarm.wav" />
+    <Media Include="game_files\SFX Pack\Beam01.wav" />
+    <Media Include="game_files\SFX Pack\Beam02.wav" />
+    <Media Include="game_files\SFX Pack\Beam03.wav" />
+    <Media Include="game_files\SFX Pack\Damage01.wav" />
+    <Media Include="game_files\SFX Pack\Damage02.wav" />
+    <Media Include="game_files\SFX Pack\Damage03.wav" />
+    <Media Include="game_files\SFX Pack\Damage04.wav" />
+    <Media Include="game_files\SFX Pack\Death01.wav" />
+    <Media Include="game_files\SFX Pack\Death02.wav" />
+    <Media Include="game_files\SFX Pack\Explosion1.wav" />
+    <Media Include="game_files\SFX Pack\Explosion2.wav" />
+    <Media Include="game_files\SFX Pack\Explosion3.wav" />
+    <Media Include="game_files\SFX Pack\Explosion4.wav" />
+    <Media Include="game_files\SFX Pack\Explosion5.wav" />
+    <Media Include="game_files\SFX Pack\Explosion6.wav" />
+    <Media Include="game_files\SFX Pack\Fire01.wav" />
+    <Media Include="game_files\SFX Pack\Fire02.wav" />
+    <Media Include="game_files\SFX Pack\Fire03.wav" />
+    <Media Include="game_files\SFX Pack\Humming.wav" />
+    <Media Include="game_files\SFX Pack\Misc01.wav" />
+    <Media Include="game_files\SFX Pack\Misc02.wav" />
+    <Media Include="game_files\SFX Pack\Misc03.wav" />
+    <Media Include="game_files\SFX Pack\Misc04.wav" />
+    <Media Include="game_files\SFX Pack\Misc05.wav" />
+    <Media Include="game_files\SFX Pack\PowerUp01.wav" />
+    <Media Include="game_files\SFX Pack\PowerUp02.wav" />
+    <Media Include="game_files\SFX Pack\PowerUp03.wav" />
+    <Media Include="game_files\SFX Pack\PowerUp04.wav" />
+    <Media Include="game_files\SFX Pack\SciFi01.wav" />
+    <Media Include="game_files\SFX Pack\SciFi02.wav" />
+    <Media Include="game_files\SFX Pack\SciFi03.wav" />
+    <Media Include="game_files\SFX Pack\SciFi04.wav" />
+    <Media Include="game_files\SFX Pack\SciFi05.wav" />
+    <Media Include="game_files\SFX Pack\SciFi06.wav" />
+    <Media Include="game_files\SFX Pack\Shot01.wav" />
+    <Media Include="game_files\SFX Pack\Shot02.wav" />
+    <Media Include="game_files\SFX Pack\Shot03.wav" />
+    <Media Include="game_files\SFX Pack\Shot04.wav" />
+    <Media Include="game_files\SFX Pack\Shot05.wav" />
+    <Media Include="game_files\SFX Pack\Shot06.wav" />
+    <Media Include="game_files\SFX Pack\Shot07.wav" />
+    <Media Include="game_files\SFX Pack\Shot08.wav" />
+    <Media Include="game_files\SFX Pack\Slash01.wav" />
+    <Media Include="game_files\SFX Pack\Slash02.wav" />
+    <Media Include="game_files\SFX Pack\Slash03.wav" />
+    <Media Include="game_files\SFX Pack\Slash04.wav" />
+    <Media Include="game_files\SFX Pack\Slash05.wav" />
+    <Media Include="game_files\SFX Pack\Sword01.wav" />
+    <Media Include="game_files\SFX Pack\UI01.wav" />
+    <Media Include="game_files\SFX Pack\UI02.wav" />
+    <Media Include="game_files\SFX Pack\UI03.wav" />
+    <Media Include="game_files\SFX Pack\UI04.wav" />
+    <Media Include="game_files\SFX Pack\UI05.wav" />
+    <Media Include="game_files\SFX Pack\UI06.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
