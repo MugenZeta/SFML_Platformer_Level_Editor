@@ -18,7 +18,8 @@ using std::string;
 class EntityObject : public sf::Drawable
 {
 private:
-	float positionX, positionY;
+	float positionX = 50.f;
+	float positionY = 50.f;
 	sf::RectangleShape hitBox;
 	sf::RectangleShape hurtBox;
 	sf::Texture texture;
@@ -35,12 +36,12 @@ public:
 	//Hit Box Setter
 	void setHitBox(sf::RectangleShape _hitBox);
 	//Hit Box Getter
-	sf::RectangleShape getHitBox();
+	sf::RectangleShape& getHitBox();
 
 	//Hurt Box Setter
 	void setHurtBox(sf::RectangleShape _hurtBox);
 	//Hurt Box Getter;
-	sf::RectangleShape getHurtBox();
+	sf::RectangleShape& getHurtBox();
 
 	void createHitBox() ;
 	void createHurtBox();

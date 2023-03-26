@@ -8,6 +8,7 @@
 class Player : public EntityObject
 {
 private:
+	float positionX, positionY;
 	int lives;
 	float movementSpeed;
 	enum Player_State
