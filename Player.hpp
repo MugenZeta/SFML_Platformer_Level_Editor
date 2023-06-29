@@ -10,7 +10,7 @@ class Player : public EntityObject
 private:
 	float positionX, positionY;
 	int lives;
-	float movementSpeed;
+	int movementSpeed;
 	enum Player_State
 	{
 		IDLE,

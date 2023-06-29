@@ -43,6 +43,9 @@
     <Filter Include="Objects\Base Entity Object\enemy">
       <UniqueIdentifier>{2ce6b123-2224-488f-b6d8-3a1b409adb30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Base Physics Engine">
+      <UniqueIdentifier>{471f555e-73d6-4406-a565-2c3b4e73af2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -60,6 +63,9 @@
     <ClCompile Include="Player.cpp">
       <Filter>Objects\Base Entity Object\player</Filter>
     </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Setup.hpp">
@@ -73,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Player.hpp">
       <Filter>Objects\Base Entity Object\player</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

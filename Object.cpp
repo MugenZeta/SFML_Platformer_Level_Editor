@@ -1,26 +1,17 @@
 #include "Object.hpp"
 
+//Delta Time Getter and Setter
+void EntityObject::setDeltaTime(sf::Time& _deltaTime){ deltaTime = _deltaTime; }
+sf::Time& EntityObject::getDeltaTime() { return deltaTime; }
 
 
-void EntityObject::setHitBox(sf::RectangleShape _hitBox)
-{
-	hitBox = _hitBox;
-}
+//Hitboc Getter and Setter
+void EntityObject::setHitBox(sf::RectangleShape& _hitBox){ hitBox = _hitBox; }
+sf::RectangleShape& EntityObject::getHitBox(){ return hitBox; }
 
-sf::RectangleShape& EntityObject::getHitBox()
-{
-	return hitBox;
-}
-
-void EntityObject::setHurtBox(sf::RectangleShape _hurtBox)
-{
-	hurtBox = _hurtBox;
-}
-
-sf::RectangleShape& EntityObject::getHurtBox()
-{
-	return hurtBox;
-}
+//Hurtbox Getter and Setter
+void EntityObject::setHurtBox(sf::RectangleShape& _hurtBox){ hurtBox = _hurtBox; }
+sf::RectangleShape& EntityObject::getHurtBox(){ return hurtBox; }
 
 void EntityObject::createHitBox()
 {

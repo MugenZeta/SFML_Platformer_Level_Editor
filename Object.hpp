@@ -24,6 +24,7 @@ private:
 	sf::RectangleShape hurtBox;
 	sf::Texture texture;
 	sf::Sprite sprite;
+	sf::Time deltaTime;
 	//vector<sf::SoundBuffer> Obj_SFX_SoundBuffer;
 	//vector<sf::Sound> Obj_SFX_Sounds;
 	bool interactablePlayerObject = false;
@@ -33,14 +34,16 @@ private:
 
 
 public:
-	//Hit Box Setter
-	void setHitBox(sf::RectangleShape _hitBox);
-	//Hit Box Getter
+	//Delta Time Setter and Getter
+	void setDeltaTime(sf::Time& _deltaTime);
+	sf::Time& getDeltaTime();
+
+	//Hit Box Setter and Getter
+	void setHitBox(sf::RectangleShape& _hitBox);
 	sf::RectangleShape& getHitBox();
 
-	//Hurt Box Setter
-	void setHurtBox(sf::RectangleShape _hurtBox);
-	//Hurt Box Getter;
+	//Hurt Box Setter and Getter
+	void setHurtBox(sf::RectangleShape& _hurtBox);
 	sf::RectangleShape& getHurtBox();
 
 	void createHitBox() ;
