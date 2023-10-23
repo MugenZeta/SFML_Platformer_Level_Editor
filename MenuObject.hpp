@@ -14,11 +14,11 @@
 
 using std::string;
 
-class MenuObjectButton
+class MenuObjectButton : public sf::Drawable
 {
-public:
+private:
 	float PostionX, PositionY;
-	int *ButtonID;
+	int* ButtonID;
 	bool isClicked = false;
 	bool isClickable = false;
 	string  buttonText;
@@ -27,6 +27,7 @@ public:
 	{
 		MAIN_MENU,
 		PAUSE_MENU,
+		OPTION_MENU
 	};
 
 
@@ -38,9 +39,16 @@ public:
 
 	sf::RectangleShape squareButton;
 	sf::CircleShape cirlceButton;
-	sf::RenderWindow *GameWindow;
+	sf::Text
+	sf::RenderWindow* GameWindow;
+
+public:
 	MenuObjectButton(float PositionX, float PositionY, ButtonType, ButtonShape, bool isClickable);
 	~MenuObjectButton();
+	void createButton()
+
+protected:
+	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
 #endif
