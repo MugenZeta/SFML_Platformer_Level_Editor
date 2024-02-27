@@ -145,15 +145,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ButtonObject.cpp" />
     <ClCompile Include="game.cpp" />
-    <ClCompile Include="MenuObject.cpp" />
-    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="EntityObject.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Setup.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MenuObject.hpp" />
-    <ClInclude Include="Object.hpp" />
+    <ClInclude Include="ButtonObject.hpp" />
+    <ClInclude Include="EntityObject.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Setup.hpp" />
   </ItemGroup>

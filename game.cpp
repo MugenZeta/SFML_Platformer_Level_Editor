@@ -4,10 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Main.hpp>
-
-#include "Object.hpp"
 #include "Player.hpp"
-#include "MenuObject.hpp"
+
 
 
 int main()

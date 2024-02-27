@@ -2,12 +2,13 @@
 #ifndef ENTITY_OBJECT_CHILD_PLAYER
 #define ENTITY_OBJECT_CHILD_PLAYER
 
-#include "Object.hpp"
+#include "EntityObject.hpp"
 #include "SFML/Window/Keyboard.hpp"
 
 class Player : public EntityObject
 {
 private:
+	float spawnPointX, spawnPointY;
 	float positionX, positionY;
 	int lives;
 	float movementSpeed;

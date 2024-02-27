@@ -24,6 +24,7 @@ private:
 	sf::RectangleShape hurtBox;
 	sf::Texture texture;
 	sf::Sprite sprite;
+    //Load Mutiple Sound Files?
 	//vector<sf::SoundBuffer> Obj_SFX_SoundBuffer;
 	//vector<sf::Sound> Obj_SFX_Sounds;
 	bool interactablePlayerObject = false;
@@ -33,6 +34,7 @@ private:
 
 
 public:
+
 	//Hit Box Setter
 	void setHitBox(sf::RectangleShape _hitBox);
 	//Hit Box Getter
@@ -46,7 +48,7 @@ public:
 	void createHitBox() ;
 	void createHurtBox();
 	void createGraphic();
-	EntityObject(bool interactablePlayerObject = false);
+	EntityObject(bool interactablePlayerObject = false, float positionX = 50.f, float positionY = 50.f);
 	
 
 

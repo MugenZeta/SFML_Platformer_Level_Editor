@@ -1,4 +1,4 @@
-#include "Object.hpp"
+#include "EntityObject.hpp"
 
 
 
@@ -57,7 +57,7 @@ void  EntityObject::createGraphic()
 
 
 
-EntityObject::EntityObject(bool interactablePlayerObject)
+EntityObject::EntityObject(bool interactablePlayerObject, float positionX , float postitionY)
 {
 	createHitBox();
 	createHurtBox();

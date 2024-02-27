@@ -19,9 +19,6 @@
     <Filter Include="Objects\Player">
       <UniqueIdentifier>{7053625c-b460-45f6-a2bc-2e72d51105ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Objects\Buttons">
-      <UniqueIdentifier>{581983ec-7988-4664-9155-3e13ae77e835}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Objects\Base Entity Object">
       <UniqueIdentifier>{d0172df9-6548-416c-95db-a1b44773ead0}</UniqueIdentifier>
     </Filter>
@@ -43,6 +40,12 @@
     <Filter Include="Objects\Base Entity Object\enemy">
       <UniqueIdentifier>{2ce6b123-2224-488f-b6d8-3a1b409adb30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\GUI Objects">
+      <UniqueIdentifier>{937726f1-c290-4604-ad95-815d55d026ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\GUI Objects\Button">
+      <UniqueIdentifier>{3ec948aa-9464-4c54-906d-8f4c2eb29d2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -51,28 +54,28 @@
     <ClCompile Include="Setup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MenuObject.cpp">
-      <Filter>Objects\Buttons</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
+    <ClCompile Include="EntityObject.cpp">
       <Filter>Objects\Base Entity Object</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Objects\Base Entity Object\player</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonObject.cpp">
+      <Filter>Objects\GUI Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Setup.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MenuObject.hpp">
-      <Filter>Objects\Buttons</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.hpp">
+    <ClInclude Include="EntityObject.hpp">
       <Filter>Objects\Base Entity Object</Filter>
     </ClInclude>
     <ClInclude Include="Player.hpp">
       <Filter>Objects\Base Entity Object\player</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonObject.hpp">
+      <Filter>Objects\GUI Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
