@@ -37,12 +37,10 @@ public:
 
 	//Hit Box Setter
 	void setHitBox(sf::RectangleShape _hitBox);
-	//Hit Box Getter
 	sf::RectangleShape& getHitBox();
 
-	//Hurt Box Setter
+	//Hurt Box Setter and Getter
 	void setHurtBox(sf::RectangleShape _hurtBox);
-	//Hurt Box Getter;
 	sf::RectangleShape& getHurtBox();
 
 	void createHitBox() ;
