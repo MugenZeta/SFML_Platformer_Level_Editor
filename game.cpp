@@ -5,6 +5,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Main.hpp>
 #include "Player.hpp"
+#include "enemy1.hpp"
 
 
 
@@ -24,7 +25,7 @@ int main()
 
 	//EntityObject playerBaseEntity;
 	Player playerPlayerEntity;
-
+	enemy1 enemy1;
 	//Main Window Update Function
 	while (GameWindow.isOpen())
 	{
@@ -38,10 +39,9 @@ int main()
 			}
 		}
 
-		playerPlayerEntity.update();
-
 		//////////Updated Items
 		playerPlayerEntity.update();
+		enemy1.update();
 
 		//Clear entire window
 		GameWindow.clear();
@@ -49,6 +49,7 @@ int main()
 		//GameWindow.draw(TestCircleShape);
 		//GameWindow.draw(playerBaseEntity);
 		GameWindow.draw(playerPlayerEntity);
+		GameWindow.draw(enemy1);
 		//Display Drawn objects to window
 		GameWindow.display();
 	}

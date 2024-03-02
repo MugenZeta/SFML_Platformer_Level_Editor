@@ -1,18 +1,20 @@
 #pragma once
-#ifndef ENTITY_OBJECT_CHILD_PLAYER
-#define ENTITY_OBJECT_CHILD_PLAYER
+#ifndef ENEMY_A
+#define ENEMY_A
 
 #include "EntityObject.hpp"
-#include "SFML/Window/Keyboard.hpp"
+#include  "SFML/System.hpp"
 
-class Player : public EntityObject
+class enemy1 :
+    public EntityObject
 {
 private:
 	float spawnPointX, spawnPointY;
 	float positionX, positionY;
-	int lives;
+	sf::Clock timmer;
+	sf::Time count = timmer.getElapsedTime();
 	float movementSpeed;
-	enum Player_State
+	enum Enemy_State
 	{
 		IDLE,
 		MOVE,
@@ -20,8 +22,7 @@ private:
 		DAMAGE,
 		DEAD
 	};
-	int currentPlayerState = IDLE;
-	bool isMoving = false;
+	int currentEnemyState = IDLE;
 
 public:
 	void Ini();
@@ -31,9 +32,8 @@ public:
 	void damage();
 	void dead();
 	void update();
-	Player();
-	virtual ~Player() override; 
-
+	enemy1();
+	virtual ~enemy1() override;
 };
 
 #endif

@@ -27,7 +27,7 @@ private:
     //Load Mutiple Sound Files?
 	//vector<sf::SoundBuffer> Obj_SFX_SoundBuffer;
 	//vector<sf::Sound> Obj_SFX_Sounds;
-	bool interactablePlayerObject = false;
+	bool interactablePlayerObject;
 	//int setSoundSystemsLimiter(int soundSystemsLimiter);
 	//int soundSystemsLimiter;
 	string filePath;
@@ -35,7 +35,7 @@ private:
 
 public:
 
-	//Hit Box Setter
+	//Hit Box Setter and Getter
 	void setHitBox(sf::RectangleShape _hitBox);
 	sf::RectangleShape& getHitBox();
 
@@ -46,7 +46,7 @@ public:
 	void createHitBox() ;
 	void createHurtBox();
 	void createGraphic();
-	EntityObject(bool interactablePlayerObject = false, float positionX = 50.f, float positionY = 50.f);
+	EntityObject(bool interactablePlayerObject = false);
 	
 
 

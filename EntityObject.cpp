@@ -57,7 +57,7 @@ void  EntityObject::createGraphic()
 
 
 
-EntityObject::EntityObject(bool interactablePlayerObject, float positionX , float postitionY)
+EntityObject::EntityObject(bool interactablePlayerObject)
 {
 	createHitBox();
 	createHurtBox();

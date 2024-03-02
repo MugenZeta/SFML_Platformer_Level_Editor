@@ -49,6 +49,8 @@ void Player::dead()
 
 void Player::update()
 {
+	positionX = getHurtBox().getPosition().x;
+	positionY = getHurtBox().getPosition().y;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 	{
 		moveLeft();
