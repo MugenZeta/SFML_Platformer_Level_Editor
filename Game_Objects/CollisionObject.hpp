@@ -12,11 +12,11 @@ private:
 	float y;
 	sf::Vector2f position(float x,  float y);
 	sf::Vector2i size(int width, int height);
-	sf::RectangleShape block;
+	sf::RectangleShape hitbox;
 
 
 public:
-	void createCollsion(sf::RectangleShape block, sf::Vector2i size(int width, int height));
+	void createCollsion(sf::RectangleShape hitbox, sf::Vector2i size(int width, int height));
 	collision_object();
 	~collision_object();
 	

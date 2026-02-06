@@ -3,6 +3,9 @@
 #define  ENTITY_OBJECT_GUI_PARENT
 class ButtonObject
 {
+private:
+    float x_pos;
+    float y_pos;
 
 };
 

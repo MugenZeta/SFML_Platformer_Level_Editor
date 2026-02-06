@@ -4,8 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Main.hpp>
-#include "Player.hpp"
-#include "enemy1.hpp"
+#include "Entity/Player.hpp"
+#include "Entity/enemy1.hpp"
 
 
 
