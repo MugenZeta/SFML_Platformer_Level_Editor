@@ -22,6 +22,7 @@ private:
 	};
 	int currentPlayerState = IDLE;
 	bool isMoving = false;
+	bool isOnGround = true;
 
 public:
 	void Ini();

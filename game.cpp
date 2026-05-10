@@ -12,7 +12,7 @@
 int main()
 {
 	// Sets Up Game Window with resolution
-	sf::RenderWindow GameWindow(sf::VideoMode(720, 480), "SFML Application");
+	sf::RenderWindow GameWindow(sf::VideoMode({720u, 480u}), "SFML Application");
 	GameWindow.setFramerateLimit(60);
 
 	//////////CODE APP HERE//////////////////////////////
@@ -30,10 +30,9 @@ int main()
 	while (GameWindow.isOpen())
 	{
 		//Window Closes
-		sf::Event ev_Refresh;
-		while (GameWindow.pollEvent(ev_Refresh))
+		while (auto ev = GameWindow.pollEvent())
 		{
-			if (ev_Refresh.type == sf::Event::Closed)
+			if (ev->is<sf::Event::Closed>())
 			{
 				GameWindow.close();
 			}

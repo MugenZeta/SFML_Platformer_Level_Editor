@@ -6,15 +6,16 @@ void enemy1::Ini()
 void enemy1::moveLeft()
 {
 	currentEnemyState = MOVE;
-	getHitBox().move(-7.f, 0.f);
-	getHurtBox().move(-7.f, 0.f);
+	getHitBox().move({-7.f, 0.f});
+	getHurtBox().move({-7.f, 0.f});
 }
 
 void enemy1::moveRight()
 {
 	currentEnemyState = MOVE;
-	getHitBox().move(7.f, 0.f);
-	getHurtBox().move(7.f, 0.f);
+	getHitBox().move({7.f, 0.f});
+	getHurtBox().move({7.f, 0.f
+});
 }
 
 void enemy1::jump()

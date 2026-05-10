@@ -15,7 +15,7 @@ include(FetchContent)
 FetchContent_Declare(
         SFML
         GIT_REPOSITORY https://github.com/SFML/SFML.git
-        GIT_TAG 2.6.1
+        GIT_TAG 3.1.0
 )
 
 # Build SFML as part of your build (static or shared; shared is fine on Windows)
@@ -34,7 +34,6 @@ FetchContent_MakeAvailable(SFML)
 # --- Your executable ---
 add_executable(LevelEditor
         Game_Objects/ButtonObject.cpp
-        Game_Objects/CollisionObject.cpp
         Entity/enemy1.cpp
         Entity/EntityObject.cpp
         game.cpp

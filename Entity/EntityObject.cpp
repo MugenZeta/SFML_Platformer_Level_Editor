@@ -29,7 +29,7 @@ void EntityObject::createHitBox()
 	hitBox.setOutlineThickness(5);
 	hitBox.setFillColor(sf::Color::Transparent);
 	//TODO:Add variables to set spawn point of object
-	hitBox.setPosition(positionX, positionY);
+	hitBox.setPosition({positionX, positionY});
 	std::cout << "Created Object hitbox" << std::endl;
 }
 
@@ -40,18 +40,17 @@ void EntityObject::createHurtBox()
 	hurtBox.setOutlineThickness(5);
 	hurtBox.setFillColor(sf::Color::Transparent);
 	//TODO:Add variables to set spawn point of object
-	hurtBox.setPosition(positionX + 50.f, positionY + 50.f);
+	hurtBox.setPosition({positionX + 50.f, positionY + 50.f});
 	std::cout << "Created Object hurtbox" << std::endl;
 }
 
-void  EntityObject::createGraphic()
+void EntityObject::createGraphic()
 {
-
-	if(!texture.loadFromFile("game_files/TestGraphics1.png"))
+	if (!texture.loadFromFile("game_files/TestGraphics1.png"))
 	{
 		std::cout << "Failed to load File Check file path." << std::endl;
 	}
-	sprite.setTexture(texture);
+	sprite.emplace(texture);
 }
 
 

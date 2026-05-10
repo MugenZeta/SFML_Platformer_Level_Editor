@@ -3,6 +3,7 @@
 #define ENTITY_OBJECT_PARENT
 
 #include <iostream>
+#include <optional>
 #include <string>
 #include <vector>
 
@@ -11,11 +12,13 @@
 #include "SFML/Audio.hpp"
 #include "SFML/Main.hpp"
 
+#include "Game_Objects/Physics.hpp"
+
 using std::vector;
 using std::string;
 
 //This is the base entity class for creating game objects.
-class EntityObject : public sf::Drawable
+class EntityObject : public sf::Drawable , public Physics
 {
 private:
 	float positionX = 50.f;
@@ -23,7 +26,7 @@ private:
 	sf::RectangleShape hitBox;
 	sf::RectangleShape hurtBox;
 	sf::Texture texture;
-	sf::Sprite sprite;
+	std::optional<sf::Sprite> sprite;
     //Load Mutiple Sound Files?
 	//vector<sf::SoundBuffer> Obj_SFX_SoundBuffer;
 	//vector<sf::Sound> Obj_SFX_Sounds;
@@ -43,11 +46,11 @@ public:
 	void setHurtBox(sf::RectangleShape _hurtBox);
 	sf::RectangleShape& getHurtBox();
 
-	void createHitBox() ;
+	void createHitBox();
 	void createHurtBox();
 	void createGraphic();
 	EntityObject(bool interactablePlayerObject = false);
-	
+
 
 
 	virtual ~EntityObject();
@@ -55,13 +58,14 @@ public:
 
 
 protected:
-	
-			virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const
-			{
-				target.draw(hitBox, states);
-				target.draw(hurtBox, states);
-				target.draw(sprite, states);
-			};
+
+	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const
+	{
+		target.draw(hitBox, states);
+		target.draw(hurtBox, states);
+		if (sprite.has_value())
+			target.draw(*sprite, states);
+	};
 };
 
 #endif // !ENTITY_OBJECT_PARENT
